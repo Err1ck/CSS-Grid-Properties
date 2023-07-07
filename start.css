@@ -1,0 +1,34 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "green-area green-area green-area"
+    "yellow-area red-area blue-area"
+    "orange-area orange-area blue-area";
+}
+#green{
+    grid-area: green-area;
+}
+#yellow{
+    grid-area: yellow-area;
+}
+#red{
+    grid-area: red-area;
+}
+#blue{
+    grid-area: blue-area;
+}
+#orange{
+    grid-area: orange-area;
+}
+section ul{
+    display:inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0.1rem;
+}
+
+li{
+    height: 1.5rem;
+    width: 2.5rem;
+}
